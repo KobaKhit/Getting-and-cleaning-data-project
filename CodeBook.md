@@ -2,7 +2,8 @@
 ## Script process
 Outline of the run_analysis.R script
 
-1. Downloads data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip if it was not downloaded and saves it as `data.zip`
+1. Downloads data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+if it was not downloaded previously and saves it as `data.zip`
 2. Extracts the data from `data.zip` into a folder called `UCI HAR Dataset`
 3. Reads in and merges by row the `X_train.txt` and `X_test.txt`
 4. Reads in the varible names from `features.txt` 
