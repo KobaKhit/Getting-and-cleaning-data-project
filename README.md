@@ -21,5 +21,5 @@ I create an R script `run_analysis.R` that does the following:
 ## run_analysis.R
 This script requires no additional packages. To run it source the script like so `source("run_analysis.R")` and run command `run_analysis()` in R.
 
-The script will produce a folder with original data called UCI HAR Dataset and a folder called result with two datasets described in the project description.
+The script will produce a folder with original data called UCI HAR Dataset and a folder called result with two datasets described in the project prompt.
 
