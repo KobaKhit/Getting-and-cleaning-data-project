@@ -19,7 +19,7 @@ I create an R script `run_analysis.R` that does the following:
 4. Creates a second, independent tidy data set `dataset2.csv` with the average of each variable for each activity and each subject. 
 
 ## run_analysis.R
-This script requires no additional packages. To run it download it to your working directory and run the command `source("run_analysis.R")`
+This script requires no additional packages. To run it source the script like so `source("run_analysis.R")` and run command `run_analysis.R`
 
 The script will produce a folder with original data called UCI HAR Dataset and a folder called result with two datasets described in the project description.
 
