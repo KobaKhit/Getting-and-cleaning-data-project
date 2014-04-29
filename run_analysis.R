@@ -18,7 +18,7 @@ rm(train,test)
 varNames<-readLines("UCI HAR Dataset/features.txt")
 names(df)<-varNames
 
-# 3 and 4. Read in activity indices and names and add them to the new column in the data set
+# 4. Read in activity indices and names and add them to the new column in the data set
 trainActivity<-readLines("UCI HAR Dataset/train/y_train.txt")
 testActivity<-readLines("UCI HAR Dataset/test/y_test.txt")
 actNames<-readLines("UCI HAR Dataset/activity_labels.txt")
@@ -47,7 +47,7 @@ dfMeanStd<-cbind(df[,1:2],df[,varNames[r]]) # data set containing the mean and s
 dfMeanStd<-dfMeanStd[order(dfMeanStd[,1],dfMeanStd[,2]),] # order data by subject id and activity
 rm(varNames,r)
 
-# 5. Create another data set with the average of each variable for each activity by subject
+# 4. Create another data set with the average of each variable for each activity by subject
 dfAvg<-aggregate(dfMeanStd[,3:length(dfMeanStd)], list(`Subject ID`=dfMeanStd[,1],Activity=dfMeanStd[,2]), FUN=mean)
 dfAvg<-dfAvg[order(dfAvg[,1]),]
 
