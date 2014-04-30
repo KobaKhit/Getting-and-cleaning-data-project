@@ -14,7 +14,7 @@ test<-read.table("UCI HAR Dataset/test/X_test.txt",header=FALSE)
 df<-rbind(test,train) # 1. merge train and test data sets
 rm(train,test)
 
-# Read in the column names for the data set and add them to the data set
+# Read in the variable(column) names for the data set and add them to the data set
 varNames<-readLines("UCI HAR Dataset/features.txt")
 names(df)<-varNames
 
