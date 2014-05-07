@@ -41,7 +41,7 @@ rm(`Subject ID`,trainSub,testSub)
 # 2. Extract measurements on the mean and std for each variable
 r<-regexpr("[Mm][Ee][Aa][Nn]|[Ss][Tt][Dd]",varNames) # identify mean and std variables 
 r<-attr(r,"match.length")>-1 # create logical with TRUE for mean and std variables
-varNames[r] # character vector of mean abd std variables
+varNames[r] # character vector of mean and std variables
 
 dfMeanStd<-cbind(df[,1:2],df[,varNames[r]]) # data set containing the mean and std variables only
 dfMeanStd<-dfMeanStd[order(dfMeanStd[,1],dfMeanStd[,2]),] # order data by subject id and activity
