@@ -20,7 +20,7 @@ if it was not downloaded previously and saves it as `data.zip`
 ### Dataset2.csv
 180 rows and 89 columns
 
-# Data decription
+# Data description
 The following description you will be able to obtain from `UCI HAR Dataset` folder from files `README.tx` and `features_info.txt` after running the `run_analysis.R` script.
 ## Human Activity Recognition Using Smartphones Dataset
 ### Version 1.0
