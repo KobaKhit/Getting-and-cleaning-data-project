@@ -19,7 +19,13 @@ I create an R script `run_analysis.R` that does the following:
 4. Creates a second, independent tidy data set `dataset2.csv` with the average of each variable for each activity and each subject. 
 
 ## run_analysis.R
-This script requires no additional packages. To run it source the script like so `source("run_analysis.R")` and run command `run_analysis()` in R.
+This script requires no additional packages. The process of the script in short:
+-Donwloads data 
+-Merges train and test sets by row
+-Extracts column names(variable names) from and adds them to the data set
+-Using regular expession finds mean and standard deviation variables and cretes a new dataset
+-Creates another dataset which the avarege of each variable by the activity and subject
+-Saves the two datasets as `csv` files
 
-The script will produce a folder with original data called UCI HAR Dataset and a folder called result with two datasets described in the project prompt.
+The script will produce a folder with original data called UCI HAR Dataset and a folder called result with two datasets described in the project prompt. More information cand be found in `CodeBook.md`.
 
