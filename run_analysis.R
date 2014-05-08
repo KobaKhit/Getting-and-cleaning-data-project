@@ -11,7 +11,7 @@ if(!file.exists("UCI HAR Dataset")){unzip("data.zip")}
 
 train<-read.table("UCI HAR Dataset/train/X_train.txt",header=FALSE)
 test<-read.table("UCI HAR Dataset/test/X_test.txt",header=FALSE)
-df<-rbind(test,train) # 1. merge train and test data sets
+df<-rbind(test,train) # merge train and test data sets
 rm(train,test)
 
 # Read in the variable(column) names for the data set and add them to the data set
